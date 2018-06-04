@@ -1,0 +1,42 @@
+* {box-sizing: border-box}
+
+
+#signup{
+  position: absolute;
+	top: 170px;
+	width: 88%;	
+	padding: 18px 6% 60px 6%;
+	margin: 5px 0 22px 0;
+	border: 1px solid rgba(147, 184, 189,0.8);
+	box-shadow:	
+		0pt 2px 5px rgba(105, 108, 109,  0.7),	
+		0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+}
+
+#signup{
+  z-index: 22;
+}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+button {
+  position:absolute !important;
+  /* margin-top:1900px; */
+  bottom: auto !important;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+	width: 86%;	
+  cursor: pointer;
+
+  margin: 5px 0 22px 0;
+
+
+}

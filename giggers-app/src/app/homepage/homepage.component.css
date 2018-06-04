@@ -1,0 +1,23 @@
+/* .header-text{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    color: rgb(68, 21, 21);
+    background: rgba(151, 75, 75, 0.041);
+  } */
+
+.header-text{
+  display: inline;
+}
+
+section{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    color: rgb(68, 21, 21);
+    background: rgba(151, 75, 75, 0.041);
+}
+
+.buttons {
+  color: red;
+}

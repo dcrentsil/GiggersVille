@@ -1,0 +1,52 @@
+<h2> List of Giggers in Database: </h2>
+<table class="table table-bordered" width="100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th> Speciality </th>
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let g of giggers; let i = index">
+    <td> {{g.id}} </td>
+    <td><a href="#"> {{g.name}} </a> </td>
+    <td> {{g.username}} </td>
+    <td> {{g.email}}</td>
+    <td> {{g.password}}</td>
+    <td> {{g.speciality}}</td>
+    <td style="width: 70px;"> 
+        <button class="button_transparent" (click)="deletegigger(g.id, i)"> delete </button>
+</tr>
+</tbody>
+</table>
+
+<h2> List of Employers looking to hire: </h2>
+<table class="table table-bordered" width="100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th> Speciality </th>
+            </tr>
+        </thead>
+<tbody>
+    <tr *ngFor="let x of gigs; let i = index">
+      <td> {{x.id}} </td>
+      <td><a href="#"> {{x.name}} </a> </td>
+      <td> {{x.username}} </td>
+      <td> {{x.email}} </td>
+      <td> {{x.password}} </td>
+      <td> {{x.speciality}} </td>
+      <td style="width: 70px;"> 
+          <button class="button_transparent" (click)="deletegigs(x.id, i)"> delete </button>
+
+        </tr>
+</tbody>
+</table>  

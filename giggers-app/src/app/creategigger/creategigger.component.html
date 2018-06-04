@@ -1,0 +1,51 @@
+<div id="container">
+    <div id="wrapper">
+    <div id="signup" class="sform">
+        <!-- <h1> New Gigger Form </h1> -->
+     <form #inputForm="ngForm" (ngSubmit)="add(inputForm)">
+    <p>
+    <label>Type</label>
+    <select name="type" [(ngModel)]="gigger.type">
+      <option value="employer">Employer</option>
+      <option value="employee">Employee</option>
+    </select>
+</p>
+
+  <p>
+    <label>Name</label>
+    <input type="text" name="name" [(ngModel)]="gigger.name" #name="ngModel">
+  </p>
+
+<p>
+    <label>Username</label>
+    <input type="text" name="username" [(ngModel)]="gigger.username" #name="ngModel">
+</p>
+<p>
+    <label>Email</label>
+    <input type="text" name="email" [(ngModel)]="gigger.email" #name="ngModel">
+</p>
+<p>
+    <label>Password</label>
+    <input type="text" name="password" [(ngModel)]="gigger.password" #name="ngModel">
+</p>
+<p>
+    <label>Speciality</label>
+    <input type="text" name="speciality" [(ngModel)]="gigger.speciality" #name="ngModel">
+</p>
+<p>
+    <label>Description</label>
+    <input type="text" name="description" [(ngModel)]="gigger.description" #name="ngModel">
+</p>
+
+<!-- <button class="btn btn-primary"> Signup </button> -->
+<button class="btn btn-primary"> Signup </button>
+
+<div [hidden]="!submitted">
+    <div class="btn-group ">
+      <h4>Gigger Created Successfully!</h4>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+</div>

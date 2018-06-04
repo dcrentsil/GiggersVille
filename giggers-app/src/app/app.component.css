@@ -1,0 +1,46 @@
+header{
+    background-color: rgb(68, 41, 29);
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+
+footer {
+    margin:0 auto;
+    width:auto;
+    height:auto;
+    /* overflow:hidden; */
+    position: fixed;
+    bottom: 0px;
+
+    /* flex: 1 0 auto; */
+    /* position: relative; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* padding: 1rem; */
+    padding: 10px;
+    color: rgb(160, 156, 156);
+    background-color:rgb(68, 41, 29);
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}

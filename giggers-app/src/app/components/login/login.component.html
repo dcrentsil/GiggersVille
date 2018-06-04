@@ -1,0 +1,33 @@
+<div class="app-content">
+    <div class="group">
+    <alert></alert>
+    <form role="form" style="text-align:center" (submit)="login()">
+    <!-- <mat-input-container> -->
+        <mat-form-field>
+        <input matInput type="text" required [(ngModel)]="gigger.username" id="username" name="username">
+        <mat-placeholder>
+            <i class="material-icons app-input-icon">face</i>Username
+        </mat-placeholder>
+        <!-- </mat-input-container> -->
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field>
+        <input matInput type="password" required [(ngModel)]="gigger.password" id="password" name="password">
+        <mat-placeholder>
+            <i class="material-icons app-input-icon">lock_open</i>Password
+        </mat-placeholder>
+
+    </mat-form-field>
+        <br>
+        <br>
+        <button mat-raised-button type="submit" name="action">LOGIN</button>
+        <br>
+        <br>
+
+        <mat-slide-toggle color="primary">
+        <small>Remember me!</small>
+        </mat-slide-toggle>
+    </form>
+    </div>
+    </div>

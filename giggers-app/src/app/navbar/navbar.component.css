@@ -1,0 +1,23 @@
+#corner {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+a:visited {
+    color: rgba(229, 235, 238, 0.404);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a{
+    background-color: rgba(43, 40, 3, 0.808);
+    font-style: italic;
+    
+}
