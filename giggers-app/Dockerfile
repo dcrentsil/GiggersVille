@@ -31,6 +31,8 @@ ENV https_proxy=""
 # Expose the port the app runs in
 EXPOSE 4200
 
+# RUN npm run build -- --prod
+
 # Serve the app
 # ENTRYPOINT ["yarn", "start", "-H", "0.0.0.0"]
 ENTRYPOINT ["yarn", "start"]
